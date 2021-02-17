@@ -3,12 +3,12 @@
 
 // To do:
 //   1. Run samples/CreateFunctions.usql to define functions before running this script
-//   2. Replace <AzureStorageAccount> with your Azure Storage account containing MAG dataset
-//   3. Replace <MagContainer> with the container name in Azure Storage account containing MAG dataset, usually in the form of mag-yyyy-mm-dd
+//   2. Replace poofa with your Azure Storage account containing MAG dataset
+//   3. Replace mag-2021-01-18 with the container name in Azure Storage account containing MAG dataset, usually in the form of mag-yyyy-mm-dd
 //
 
-DECLARE @blobAccount     string = "<AzureStorageAccount>";
-DECLARE @blobContainer   string = "<MagContainer>";
+DECLARE @blobAccount     string = "poofa";
+DECLARE @blobContainer   string = "mag-2021-01-18";
 DECLARE @uriPrefix       string = "wasb://" + @blobContainer + "@" + @blobAccount + "/";
 
 //*******************Constant Variable Section*****************************
